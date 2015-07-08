@@ -25,8 +25,7 @@ public class MainActivity extends ActionBarActivity {
         String[] favoriteTVShows = {"Lillyhammer", "Twin Peaks", "Game of Thrones",
                 "Silicon Valley", "Modern Family"};
 
-        ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                favoriteTVShows);
+        ListAdapter adapter = new AdapterListView(this, favoriteTVShows);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
         theListView.setAdapter(adapter);
