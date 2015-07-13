@@ -61,10 +61,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == RESULT_OK)
-        {
+//        if (resultCode == RESULT_OK)
+//        {
             String callingActivity = String.valueOf(data.getExtras().getString("previous"));
             previous_activity.append(String.valueOf(callingActivity));
-        }
+//        }
     }
 }

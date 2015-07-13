@@ -29,14 +29,13 @@ public class SecondActivity extends Activity {
     }
     public void handleReturn(View view) {
 
-
         Intent goBack = new Intent();
 
         goBack.putExtra("previous", "SecondActivity");
 
-        setResult(RESULT_OK);
+        setResult(RESULT_OK, goBack);
+        finish();
 
     }
-
 
 }
