@@ -56,13 +56,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Button 3 clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
     }
 
     @Override
@@ -85,5 +78,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void button3Handler(View view) {
+        Toast.makeText(MainActivity.this, "Button 3 clicked", Toast.LENGTH_SHORT).show();
     }
 }

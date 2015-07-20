@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Click me 3!"
-            android:id="@+id/button3"/>
+            android:id="@+id/button3"
+            android:onClick="button3Handler"/>
     </LinearLayout>
 
 
