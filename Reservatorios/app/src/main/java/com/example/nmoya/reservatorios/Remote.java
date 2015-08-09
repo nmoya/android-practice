@@ -58,9 +58,9 @@ class Remote extends AsyncTask<String, Void, String[]> {
 
     @Override
     protected void onPostExecute(String[] strings) {
-        norte.setText(strings[0]);
-        nordeste.setText(strings[1]);
-        sudeste.setText(strings[2]);
-        sul.setText(strings[3]);
+        norte.setText(strings[3]);
+        nordeste.setText(strings[2]);
+        sudeste.setText(strings[0]);
+        sul.setText(strings[1]);
     }
 }
